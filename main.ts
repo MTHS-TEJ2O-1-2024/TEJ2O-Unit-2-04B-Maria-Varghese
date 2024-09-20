@@ -1,8 +1,17 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: Mr. Coxall
- * Created on: Sep 2020
- * This program ...
+ * Created by: Maria
+ * Created on: Sep 2024
+ * This program shows temperature
 */
 
-basic.showString('Hello, World!')
+//our variable for a temperature
+let temperature: number
+
+basic.clearScreen()
+basic.showIcon(IconNames.Happy)
+
+input.onButtonPressed(Button.A, function(){
+    temperature = randint (-2, 35)
+    basic.showNumber(temperature)
+})
