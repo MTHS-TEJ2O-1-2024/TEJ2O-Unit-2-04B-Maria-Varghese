@@ -10,9 +10,9 @@ let temperature: number
 
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
-basic.showString('The temperature is')
 
 input.onButtonPressed(Button.A, function(){
+    basic.showString('The temperature is')
     temperature = input.temperature()
     basic.showNumber(temperature)
 })
